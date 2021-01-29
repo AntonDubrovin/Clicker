@@ -12,7 +12,6 @@ import com.example.clicker.R
 import com.example.clicker.upgrades.UpgradeInc
 import kotlinx.android.synthetic.main.fragment_upgrades.view.*
 
-
 @ExperimentalUnsignedTypes
 
 class UpgradeFragment : Fragment() {
@@ -39,5 +38,4 @@ class UpgradeFragment : Fragment() {
 
         return view
     }
-
 }

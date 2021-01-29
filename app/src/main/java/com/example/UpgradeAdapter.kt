@@ -31,5 +31,4 @@ class UpgradeAdapter(
         holder.bind(users[position])
 
     override fun getItemCount() = users.size
-
 }

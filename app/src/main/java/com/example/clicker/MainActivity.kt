@@ -11,7 +11,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-
 @ExperimentalUnsignedTypes
 class MainActivity : AppCompatActivity() {
     private val countKey = "COUNT_KEY"
