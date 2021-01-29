@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Clicker</string>
+    <string name="upgrade_name">Upgrade name</string>
+    <string name="level">level</string>
+    <string name="cost">cost</string>
+    <string name="inc">inc</string>
+    <string name="auto">auto</string>
+    <string name="main">main</string>
+    <string name="upgrades">upgrades</string>
 </resources>

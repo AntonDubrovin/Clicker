@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upgrades_navigation"
+    app:startDestination="@+id/upgradesFragment">
+
+    <fragment
+        android:id="@+id/upgradesFragment"
+        android:name="com.example.fragments.UpgradeFragment"
+        android:label="UpgradesFragment"
+        tools:layout="@layout/fragment_upgrades" />
+
+</navigation>

@@ -1,21 +1,33 @@
 package com.example.clicker.upgrades
 
-import com.example.clicker.player.Player
-import com.example.clicker.upgrades.common.AbstractUpgrade
+import com.example.clicker.MainActivity.Companion.player
 
 @ExperimentalUnsignedTypes
-class UpgradeInc(player_: Player) : AbstractUpgrade(player_) {
-    var autoInc: ULong = 0U
-    override var level: ULong = 0U
-    override var cost: ULong = 15U
+data class UpgradeInc(val name_: String) {
+    val name = name_
+    var increment: ULong = 1U
+    var level: ULong = 0U
+    var cost: ULong = 15U
+    var autoIncrement: ULong = 0U
 
-    override fun upgrade() {
-        upgradeInc()
-        level++
-        cost *= 2U // TODO
+    fun upgrade() {
+        if (player.countClick >= cost) {
+            player.countClick -= cost
+            upgradeInc()
+            upgradeAutoInc()
+
+            level++
+            cost *= 2U // TODO
+        }
     }
 
     private fun upgradeInc() {
-        player.inc += 1U // TODO
+        player.inc += increment
+        increment++// TODO
+    }
+
+    private fun upgradeAutoInc() {
+        player.autoInc += autoIncrement
+        autoIncrement++//TODO
     }
 }

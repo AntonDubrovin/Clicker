@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_navigation"
+        android:title="@string/main"
+        android:icon="@mipmap/ic_launcher_round" />
+    <item
+        android:id="@+id/upgrades_navigation"
+        android:title="@string/upgrades"
+        android:icon="@mipmap/ic_launcher_round" />
+</menu>
